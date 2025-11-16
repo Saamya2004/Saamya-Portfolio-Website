@@ -16,7 +16,6 @@ import {
   Users,
   Calendar,
   MapPin,
-  ExternalLink,
   Briefcase,
   GraduationCap,
   Palette,
@@ -28,7 +27,6 @@ import {
   ChevronUp
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import heroImage from "@assets/generated_images/AI_neural_network_visualization_457fea41.png";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -183,25 +181,9 @@ export default function Home() {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
 
-        {/* Hero Image */}
-        <div className="absolute right-0 top-0 bottom-0 w-full lg:w-2/5 opacity-30 lg:opacity-40">
-          <img 
-            src={heroImage} 
-            alt="AI Neural Network Visualization" 
-            className="w-full h-full object-cover object-center"
-            data-testid="img-hero"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/50 to-background" />
-        </div>
-
         <div className="relative max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-24 z-10">
-          <div className="text-center lg:text-left lg:max-w-3xl space-y-8">
+          <div className="text-center space-y-8">
             <div className="space-y-4">
-              <div className="inline-block">
-                <Badge variant="secondary" className="text-xs font-mono px-4 py-1.5" data-testid="badge-greeting">
-                  Welcome to my portfolio
-                </Badge>
-              </div>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight" data-testid="text-name">
                 Saamya Gupta
               </h1>
@@ -210,13 +192,13 @@ export default function Home() {
               </p>
             </div>
 
-            <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed" data-testid="text-summary">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed" data-testid="text-summary">
               Specializing in LLM-integrated automation, multi-agent systems using LANGGRAPH and OPENAI AGENTIC SDK, 
               and data-driven analytics. Proficient in anomaly detection and end-to-end AI workflows using Python and LangChains.
             </p>
 
             {/* Contact CTAs */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
               <Button 
                 variant="default" 
                 size="lg" 
@@ -256,13 +238,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary/30 rounded-full p-1">
-            <div className="w-1.5 h-3 bg-primary rounded-full mx-auto" />
-          </div>
-        </div>
       </section>
 
       {/* About Section */}
@@ -276,50 +251,26 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-              {/* Professional Summary */}
-              <div className="space-y-6">
-                <Card className="p-6 md:p-8">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-4" data-testid="heading-summary">Professional Summary</h3>
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
-                    <p>
-                      AI and Data Science Engineer with expertise in building sophisticated multi-agent systems 
-                      and implementing LLM-integrated automation solutions. Currently serving as Assistant Manager 
-                      at Airtel Digital, specializing in DDoS analysis and threat detection.
-                    </p>
-                    <p>
-                      Proficient in leveraging cutting-edge technologies including LangGraph, OpenAI Agentic SDK, 
-                      and advanced machine learning frameworks to deliver end-to-end AI workflows. Skilled in 
-                      SQL-based data extraction, model development, and creating impactful dashboards with Power BI.
-                    </p>
-                    <p>
-                      Passionate about pushing the boundaries of what's possible with AI, from building autonomous 
-                      research systems to developing RAG-based assistants and vulnerability scanners.
-                    </p>
-                  </div>
-                </Card>
+            {/* Professional Summary */}
+            <Card className="p-6 md:p-8 max-w-4xl mx-auto">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4" data-testid="heading-summary">Professional Summary</h3>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  AI and Data Science Engineer with expertise in building sophisticated multi-agent systems 
+                  and implementing LLM-integrated automation solutions. Currently serving as Assistant Manager 
+                  at Airtel Digital, specializing in DDoS analysis and threat detection.
+                </p>
+                <p>
+                  Proficient in leveraging cutting-edge technologies including LangGraph, OpenAI Agentic SDK, 
+                  and advanced machine learning frameworks to deliver end-to-end AI workflows. Skilled in 
+                  SQL-based data extraction, model development, and creating impactful dashboards with Power BI.
+                </p>
+                <p>
+                  Passionate about pushing the boundaries of what's possible with AI, from building autonomous 
+                  research systems to developing RAG-based assistants and vulnerability scanners.
+                </p>
               </div>
-
-              {/* Stats Cards */}
-              <div className="grid grid-cols-2 gap-4">
-                <Card className="p-6 text-center hover-elevate" data-testid="card-stat-experience">
-                  <div className="text-4xl font-bold text-primary mb-2">1+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </Card>
-                <Card className="p-6 text-center hover-elevate" data-testid="card-stat-projects">
-                  <div className="text-4xl font-bold text-accent mb-2">10+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
-                </Card>
-                <Card className="p-6 text-center hover-elevate" data-testid="card-stat-skills">
-                  <div className="text-4xl font-bold text-primary mb-2">25+</div>
-                  <div className="text-sm text-muted-foreground">Skills Mastered</div>
-                </Card>
-                <Card className="p-6 text-center hover-elevate" data-testid="card-stat-certifications">
-                  <div className="text-4xl font-bold text-accent mb-2">8.52</div>
-                  <div className="text-sm text-muted-foreground">CGPA (B.Tech)</div>
-                </Card>
-              </div>
-            </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -476,7 +427,6 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
                     <Brain className="w-8 h-8 text-primary" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Interactive AI Personal Co-Worker</h3>
@@ -501,7 +451,6 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
                     <GitBranch className="w-8 h-8 text-accent" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Autonomous Multi-Agent Research System</h3>
@@ -526,7 +475,6 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
                     <Database className="w-8 h-8 text-primary" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">RAG-based Research Assistant</h3>
@@ -551,7 +499,6 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
                     <Code2 className="w-8 h-8 text-accent" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">AI-Powered Vulnerability Scanner</h3>
@@ -576,7 +523,6 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start justify-between">
                     <BarChart3 className="w-8 h-8 text-primary" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Machine Learning Prediction Models</h3>
