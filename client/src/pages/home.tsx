@@ -845,8 +845,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="heading-contact">Let's Build Together</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm always interested in hearing about new projects and opportunities. 
-                  Whether you have a question or just want to say hi, feel free to reach out!
+                  I'm always interested in hearing about new projects and opportunities.
                 </p>
               </div>
               <Button 
@@ -863,7 +862,6 @@ export default function Home() {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
               <div className="space-y-4">
                 <a 
                   href="mailto:guptasaamya6@gmail.com" 
