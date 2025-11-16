@@ -244,13 +244,6 @@ export default function Home() {
       <section id="about" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <div className="space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight" data-testid="heading-about">About Me</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Transforming complex data challenges into intelligent solutions
-              </p>
-            </div>
-
             {/* Professional Summary */}
             <Card className="p-6 md:p-8 max-w-4xl mx-auto">
               <h3 className="text-xl md:text-2xl font-semibold mb-4" data-testid="heading-summary">Professional Summary</h3>
