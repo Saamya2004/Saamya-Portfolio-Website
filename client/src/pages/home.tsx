@@ -208,7 +208,7 @@ export default function Home() {
               >
                 <a href="mailto:guptasaamya6@gmail.com">
                   <Mail className="w-4 h-4" />
-                  Email Me
+                  Email
                 </a>
               </Button>
               <Button 
@@ -408,7 +408,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <div className="space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight" data-testid="heading-projects">Featured Projects</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight" data-testid="heading-projects">Projects</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Innovative AI solutions and intelligent systems
               </p>
@@ -498,7 +498,7 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground mb-4">Auto-Fix Tool with LangChain</p>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">
-                    A sophisticated system to detect and automatically fix code vulnerabilities using LangChain. 
+                    A system to detect and automatically fix code vulnerabilities using LangChain. 
                     Analyzes code patterns, identifies security issues, and suggests or applies automated fixes 
                     to improve code security and quality.
                   </p>
